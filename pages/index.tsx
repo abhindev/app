@@ -1,10 +1,10 @@
 import Head from 'next/head'
-import { Inter } from 'next/font/google'
+// import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import axios from 'axios'
 import Link from 'next/link'
 
-const inter = Inter({ subsets: ['latin'] })
+// const inter = Inter({ subsets: ['latin'] })
 
 
 import Featured from '../components/ui/Featured'
