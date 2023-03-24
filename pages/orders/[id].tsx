@@ -24,22 +24,14 @@ const day = date.getDate();
 const formattedDate = `${year}-${month < 10 ? '0' : ''}${month}-${day < 10 ? '0' : ''}${day}`;
 // console.log(formattedDate);
 
-
-
-
-
   const orderItems = order.item.products;
   const order_status = resone.data.order_status;
   const router = useRouter();
 
   const { id } = router.query;
 
-  useEffect(() => {
-    
-  },[])
 
   const clickHandler = () => {
-    
       // Make the PUT request
       const response = axios.put(`http://localhost:3000/api/orders/${id}`, {
         // Include any data you want to update in the request body

@@ -84,7 +84,7 @@ const Product = ({ product, products }: any) => {
           <div className={styles.sizes}>
             {product.prices.map((size: any, i: number) => (
               <div className={styles.size} key={i} >
-                <h1 style={{backgroundColor: i==selection? "#76A11F":"white", color: i==selection? "white":"black" }} className={styles.number} onClick={(e)=>{{handleClickPrice(size)}; setSelection(i)}} >{size.text}</h1>
+                <h1 style={{backgroundColor: i==selection? "#76A11F":"white", color: i==selection? "white":"black" }} className={styles.number} onClick={(e)=>{{handleClickPrice(size)} setSelection(i)}} >{size.text}</h1>
               </div>
             ))}
 
